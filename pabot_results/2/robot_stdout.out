@@ -1,0 +1,27 @@
+==============================================================================
+Testcases                                                                     
+==============================================================================
+Testcases.TC2                                                                 
+==============================================================================
+checkboxes Testing:                                                   get Selenium Timeout
+https://ironspider.ca/forms/checkradio.htm#radio
+1 second
+0 seconds
+| PASS |
+------------------------------------------------------------------------------
+Testing Alerts:                                                       You successfully clicked an alert
+You clicked: Cancel
+You entered: Hi
+| PASS |
+------------------------------------------------------------------------------
+Testing Page Scrolling:                                               1
+?1,429.83 crore[190]
+| PASS |
+------------------------------------------------------------------------------
+Testcases.TC2                                                         | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Testcases                                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\saiprakashreddy.s\Automation\RPA\pabot_results\2\output.xml

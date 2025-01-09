@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-03T14:12:35.362720" rpa="false" schemaversion="5">
+<suite id="s1" name="Practice" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases(Assesment)\Practice.robot">
+<test id="s1-t1" name="Login to the Page:" line="5">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-01-03T14:12:36.042164" elapsed="0.000422"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-03T14:12:36.043274" level="INFO">Opening browser 'chrome' to base url 'http://youtube.com'.</msg>
+<arg>http://youtube.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-03T14:12:36.043007" elapsed="19.412110"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-03T14:12:55.455771" elapsed="0.300124"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-03T14:12:55.758563" level="INFO">Clicking element 'id:uyu'.</msg>
+<msg time="2025-01-03T14:13:06.001929" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-56.png"&gt;&lt;img src="selenium-screenshot-56.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-03T14:13:06.002225" level="FAIL">Element with locator 'id:uyu' not found.</msg>
+<arg>id:uyu</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-03T14:12:55.757471" elapsed="10.254442">Element with locator 'id:uyu' not found.</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2025-01-03T14:13:06.012517" elapsed="0.000053"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<var>@{list}</var>
+<arg>sai</arg>
+<arg>prakash</arg>
+<arg>reddy</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2025-01-03T14:13:06.012803" elapsed="0.000036"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-01-03T14:13:06.013289" elapsed="0.000029"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2025-01-03T14:13:06.013182" elapsed="0.000185"/>
+</iter>
+<var>${i}</var>
+<value>@{list}</value>
+<status status="NOT RUN" start="2025-01-03T14:13:06.013015" elapsed="0.000410"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<arg>This is Log message</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-01-03T14:13:06.013629" elapsed="0.000030"/>
+</kw>
+<status status="FAIL" start="2025-01-03T14:12:36.040500" elapsed="29.973449">Element with locator 'id:uyu' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-03T14:12:35.370952" elapsed="30.643844"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Practice">Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-29T17:31:15.704330" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases">
+<suite id="s1-s1" name="TC1" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases\TC1.robot">
+<test id="s1-s1-t1" name="Testing Browser Keywords:" line="8">
+<kw name="opening_browser" owner="Res1">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:16.924594" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-29T17:31:16.923502" elapsed="5.823701"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-29T17:31:22.748153" elapsed="0.106907"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-12-29T17:31:16.921041" elapsed="5.934471"/>
+</kw>
+<kw name="checking the element1" owner="Res1">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:22.939840" level="INFO">Element 'id:user-name' is displayed.</msg>
+<arg>id:user-name</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-29T17:31:22.858799" elapsed="0.081537"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>id:user-name</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-29T17:31:22.940816" elapsed="0.081168"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:22.857077" elapsed="0.165266"/>
+</kw>
+<kw name="Enter user_name" owner="Res1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:23.025774" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.024379" elapsed="0.267362"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>id:user-name</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.292139" elapsed="0.066687"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-29T17:31:26.360709" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.359216" elapsed="3.001743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:26.362830" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:26.361346" elapsed="0.171290"/>
+</kw>
+<arg>standard_user</arg>
+<status status="PASS" start="2024-12-29T17:31:23.022827" elapsed="3.510020"/>
+</kw>
+<kw name="checking the element2" owner="Res1">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:26.567600" level="INFO">Element 'id:password' is displayed.</msg>
+<arg>id:password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-29T17:31:26.534079" elapsed="0.033707"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-29T17:31:26.568118" elapsed="0.036741"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:26.533145" elapsed="0.072010"/>
+</kw>
+<kw name="Enter password" owner="Res1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:26.607279" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:26.606602" elapsed="0.153458"/>
+</kw>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2024-12-29T17:31:26.605577" elapsed="0.154667"/>
+</kw>
+<kw name="Login_into_app" owner="Res1">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:26.761855" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:26.761351" elapsed="0.995146"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:27.800632" level="INFO">Element 'xpath://*[@id="inventory_filter_container"]/div' is displayed.</msg>
+<arg>xpath://*[@id="inventory_filter_container"]/div</arg>
+<arg>Chrome</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-29T17:31:27.756810" elapsed="0.044038"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-29T17:31:27.801191" elapsed="0.009690"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:26.760493" elapsed="1.050663"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:27.812987" level="INFO">Selecting options from selection list 'xpath://*[@id="inventory_filter_container"]/select' by index 2.</msg>
+<arg>xpath://*[@id="inventory_filter_container"]/select</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-12-29T17:31:27.811748" elapsed="0.179856"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-29T17:31:30.994347" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-29T17:31:27.992145" elapsed="3.002462"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-29T17:31:30.996180" level="INFO">${speed} = get Selenium speed</msg>
+<var>${speed}</var>
+<arg>get Selenium speed</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-29T17:31:30.995013" elapsed="0.001246"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:30.996483" elapsed="0.001052"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-29T17:31:30.997753" elapsed="2.618549"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:16.919419" elapsed="16.697558"/>
+</test>
+<status status="PASS" start="2024-12-29T17:31:15.789872" elapsed="17.828857"/>
+</suite>
+<status status="PASS" start="2024-12-29T17:31:15.764620" elapsed="17.856920"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC1">Testcases.TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

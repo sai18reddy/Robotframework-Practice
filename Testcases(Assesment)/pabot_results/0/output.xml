@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-31T15:28:52.888765" rpa="false" schemaversion="5">
+<suite id="s1" name="TC4" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases\TC4.robot">
+<test id="s1-t1" name="Test using chrome browser:" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-31T15:28:53.733404" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-31T15:28:53.732351" elapsed="6.100962"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-31T15:28:59.833722" elapsed="0.058871"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-12-31T15:28:59.914567" level="INFO">${title} = Swag Labs</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-12-31T15:28:59.893383" elapsed="0.021275"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title} using chrome browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-31T15:28:59.914974" elapsed="0.001310"/>
+</kw>
+<status status="PASS" start="2024-12-31T15:28:53.730431" elapsed="6.186132"/>
+</test>
+<test id="s1-t2" name="Test using edge browser:" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-31T15:28:59.919535" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-31T15:28:59.918667" elapsed="6.480647"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-31T15:29:06.400151" elapsed="0.144040"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-12-31T15:29:06.564108" level="INFO">${title} = Swag Labs</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-12-31T15:29:06.544558" elapsed="0.019685"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title} using chrome browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-31T15:29:06.564791" elapsed="0.001959"/>
+</kw>
+<status status="PASS" start="2024-12-31T15:28:59.917680" elapsed="6.649486"/>
+</test>
+<test id="s1-t3" name="Test2 using chrome browser:" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-31T15:29:06.571474" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-31T15:29:06.570187" elapsed="8.257837"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-31T15:29:14.828493" elapsed="0.071509"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-31T15:29:14.900613" elapsed="0.015039"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-12-31T15:29:14.937982" level="INFO">${title} = Swag Labs</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-12-31T15:29:14.915992" elapsed="0.022078"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title} using chrome browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-31T15:29:14.938408" elapsed="0.001779"/>
+</kw>
+<status status="PASS" start="2024-12-31T15:29:06.568721" elapsed="8.371795"/>
+</test>
+<status status="PASS" start="2024-12-31T15:28:52.935182" elapsed="22.006587"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="TC4">TC4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

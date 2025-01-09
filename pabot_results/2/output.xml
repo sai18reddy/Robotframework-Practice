@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-29T17:31:33.281479" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases">
+<suite id="s1-s1" name="TC2" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases\TC2.robot">
+<test id="s1-s1-t1" name="checkboxes Testing:" line="8">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary" type="SETUP">
+<arg>1</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-12-29T17:31:34.289572" elapsed="0.001088"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:34.291803" level="INFO">Opening browser 'chrome' to base url 'https://ironspider.ca/forms/checkradio.htm#radio'.</msg>
+<arg>https://ironspider.ca/forms/checkradio.htm#radio</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-29T17:31:34.291123" elapsed="7.146682"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-29T17:31:41.438168" elapsed="0.051926"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:41.492782" level="INFO">Selecting checkbox 'xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[1]'.</msg>
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[1]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:41.490490" elapsed="0.188857"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:41.681065" level="INFO">Selecting checkbox 'xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[3]'.</msg>
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[3]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:41.679833" elapsed="0.147641"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:41.829127" level="INFO">Unselecting checkbox 'xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[1]'.</msg>
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[1]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:41.827947" elapsed="0.123733"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:41.952986" level="INFO">Selecting checkbox 'xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[2]'.</msg>
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[1]/form/input[2]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:41.951990" elapsed="0.127243"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-29T17:31:45.080865" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-29T17:31:42.079526" elapsed="3.001619"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.081556" elapsed="0.001707"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:45.092846" level="INFO">${link} = https://ironspider.ca/forms/checkradio.htm#radio</msg>
+<var>${link}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.083565" elapsed="0.009354"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${link}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.093161" elapsed="0.001210"/>
+</kw>
+<kw name="Get Selenium Timeout" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:45.095182" level="INFO">${speed1} = 1 second</msg>
+<var>${speed1}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.094584" elapsed="0.000649"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${speed1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.095417" elapsed="0.000842"/>
+</kw>
+<kw name="Get Selenium Speed" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:45.097345" level="INFO">${sel_speed} = 0 seconds</msg>
+<var>${sel_speed}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.096606" elapsed="0.000782"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sel_speed}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.097550" elapsed="0.000796"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[2]/form/input[3]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.098513" elapsed="0.302547"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.401349" elapsed="0.003218"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:45.405661" level="INFO">Clicking element 'xpath://*[@id="Content"]/div[1]/blockquote[2]/form/input[2]'.</msg>
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[2]/form/input[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.404833" elapsed="0.102918"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:45.509129" level="INFO">Clicking element 'xpath://*[@id="Content"]/div[1]/blockquote[2]/form/input[1]'.</msg>
+<arg>xpath://*[@id="Content"]/div[1]/blockquote[2]/form/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.508137" elapsed="0.098639"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:34.287234" elapsed="11.319895"/>
+</test>
+<test id="s1-s1-t2" name="Testing Alerts:" line="31">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary" type="SETUP">
+<arg>1</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.610133" elapsed="0.003142"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:45.614208" level="INFO">Opening url 'https://the-internet.herokuapp.com/javascript_alerts'</msg>
+<arg>https://the-internet.herokuapp.com/javascript_alerts</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-12-29T17:31:45.613529" elapsed="4.275029"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:49.890221" level="INFO">Clicking element 'xpath://*[@id="content"]/div/ul/li[1]/button'.</msg>
+<arg>xpath://*[@id="content"]/div/ul/li[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:49.889093" elapsed="0.166211"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.056763" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.055694" elapsed="0.015452"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.129670" level="INFO">${result1} = You successfully clicked an alert</msg>
+<var>${result1}</var>
+<arg>xpath://*[@id="result"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.071657" elapsed="0.058111"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.130045" elapsed="0.001216"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.133672" level="INFO">Clicking element 'xpath://*[@id="content"]/div/ul/li[2]/button'.</msg>
+<arg>xpath://*[@id="content"]/div/ul/li[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.132417" elapsed="0.164281"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.298328" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.297136" elapsed="0.016463"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.360368" level="INFO">${result2} = You clicked: Cancel</msg>
+<var>${result2}</var>
+<arg>xpath://*[@id="result"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.316178" elapsed="0.044287"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.360815" elapsed="0.001345"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.363538" level="INFO">Clicking element 'xpath://*[@id="content"]/div/ul/li[3]/button'.</msg>
+<arg>xpath://*[@id="content"]/div/ul/li[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.362607" elapsed="0.144981"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>Hi</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.508013" elapsed="0.026004"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.576326" level="INFO">${result3} = You entered: Hi</msg>
+<var>${result3}</var>
+<arg>xpath://*[@id="result"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.534508" elapsed="0.041918"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result3}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.576799" elapsed="0.001312"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:45.608526" elapsed="4.969938"/>
+</test>
+<test id="s1-s1-t3" name="Testing Page Scrolling:" line="45">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary" type="SETUP">
+<arg>1</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.580436" elapsed="0.004437"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:50.585917" level="INFO">Opening browser 'headless chrome' to base url 'https://www.wikipedia.org/'.</msg>
+<arg>https://www.wikipedia.org/</arg>
+<arg>headless chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-29T17:31:50.585233" elapsed="5.182678"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:55.769324" level="INFO">Opening url 'https://www.wikipedia.org/'</msg>
+<arg>https://www.wikipedia.org/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-12-29T17:31:55.768347" elapsed="0.167190"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-29T17:31:55.935906" elapsed="0.055999"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:55.993762" level="INFO">Executing JavaScript:
+window.scrollTo(0,50)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,50)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-12-29T17:31:55.992244" elapsed="0.046615"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:56.040139" level="INFO">Typing text 'Baahubali' into text field 'id:searchInput'.</msg>
+<arg>id:searchInput</arg>
+<arg>Baahubali</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:56.039261" elapsed="0.194396"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:56.234893" level="INFO">Clicking element 'xpath://*[@id="search-form"]/fieldset/button/i'.</msg>
+<arg>xpath://*[@id="search-form"]/fieldset/button/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:56.233997" elapsed="2.159734"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:58.432039" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>xpath://*[@id="firstHeading"]/span</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:58.394104" elapsed="0.038059"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:31:58.432545" elapsed="0.002112"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-29T17:32:00.436642" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-29T17:31:58.435124" elapsed="2.001727"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:32:00.438242" level="INFO">Clicking link 'xpath://*[@id="mw-content-text"]/div[1]/ul/li/ul/li[2]/i/a'.</msg>
+<arg>xpath://*[@id="mw-content-text"]/div[1]/ul/li/ul/li[2]/i/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:32:00.437192" elapsed="1.212489"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://*[@id="toc-International"]/a/div/span[2]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-29T17:32:01.650079" elapsed="0.607756"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:32:02.259440" level="INFO">Clicking element 'xpath://*[@id="toc-India"]/a/div/span[2]'.</msg>
+<arg>xpath://*[@id="toc-India"]/a/div/span[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:32:02.258246" elapsed="0.144950"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:32:02.450362" level="INFO">${high_collection} = ₹1,429.83 crore[190]</msg>
+<var>${high_collection}</var>
+<arg>xpath://*[@id="mw-content-text"]/div[1]/table[3]/tbody/tr[2]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:32:02.403704" elapsed="0.046757"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${high_collection}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-12-29T17:32:02.450797" elapsed="0.001179"/>
+</kw>
+<kw name="Table Row Should Contain" owner="SeleniumLibrary">
+<arg>xpath://*[@id="mw-content-text"]/div[1]/table[3]</arg>
+<arg>2</arg>
+<arg>India</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" start="2024-12-29T17:32:02.452196" elapsed="0.113226"/>
+</kw>
+<kw name="Table Column Should Contain" owner="SeleniumLibrary">
+<arg>xpath://*[@id="mw-content-text"]/div[1]/table[3]</arg>
+<arg>2</arg>
+<arg>₹1,429.83 crore[190]</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" start="2024-12-29T17:32:02.565802" elapsed="0.992065"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:32:13.651762" level="INFO">Table cell contains 'India'.</msg>
+<arg>xpath://*[@id="mw-content-text"]/div[1]/table[3]</arg>
+<arg>2</arg>
+<arg>1</arg>
+<arg>India</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2024-12-29T17:32:03.558283" elapsed="10.093632"/>
+</kw>
+<tag>Scroll</tag>
+<status status="PASS" start="2024-12-29T17:31:50.579480" elapsed="23.072691"/>
+</test>
+<status status="PASS" start="2024-12-29T17:31:33.371127" elapsed="40.281890"/>
+</suite>
+<status status="PASS" start="2024-12-29T17:31:33.340883" elapsed="40.313187"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Scroll</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="TC2">Testcases.TC2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

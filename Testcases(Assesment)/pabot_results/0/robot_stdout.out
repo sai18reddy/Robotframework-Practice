@@ -1,0 +1,16 @@
+==============================================================================
+TC4                                                                           
+==============================================================================
+Test using chrome browser:                                            Swag Labs using chrome browser
+| PASS |
+------------------------------------------------------------------------------
+Test using edge browser:                                              Swag Labs using chrome browser
+| PASS |
+------------------------------------------------------------------------------
+Test2 using chrome browser:                                           Swag Labs using chrome browser
+| PASS |
+------------------------------------------------------------------------------
+TC4                                                                   | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\saiprakashreddy.s\Automation\RPA\Testcases\pabot_results\0\output.xml

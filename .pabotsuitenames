@@ -1,0 +1,7 @@
+datasources:6ff479b97d88be49bf70820aaa77481a539c022b
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:8f8afc31278ba42ba58462cc45e51410ced90cc0
+--suite Testcases.Data TC
+--suite Testcases.TC1
+--suite Testcases.TC2

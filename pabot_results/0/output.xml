@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-29T17:31:15.662159" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases">
+<suite id="s1-s1" name="Data TC" source="C:\Users\saiprakashreddy.s\Automation\RPA\Testcases\Data_TC.robot">
+<kw name="opening_browser" owner="Res2" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:16.858288" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-29T17:31:16.857481" elapsed="5.972586"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:16.856011" elapsed="5.974564"/>
+</kw>
+<test id="s1-s1-t1" name="Login with cvv using user and pass" line="13">
+<kw name="Login to the application">
+<kw name="Enter input data" owner="Res2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:22.842018" level="INFO">Typing text 'user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:22.837488" elapsed="0.358154"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:23.197447" level="INFO">Typing text 'pass' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.196122" elapsed="0.198761"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-12-29T17:31:22.836082" elapsed="0.559148"/>
+</kw>
+<kw name="clicking_button" owner="Res2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:23.398221" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.397201" elapsed="0.149085"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:23.395636" elapsed="0.150990"/>
+</kw>
+<arg>username=user</arg>
+<arg>password=pass</arg>
+<status status="PASS" start="2024-12-29T17:31:22.834419" elapsed="0.712427"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:22.830853" elapsed="0.716381"/>
+</test>
+<test id="s1-s1-t2" name="Login with cvv using user and " line="13">
+<kw name="Login to the application">
+<kw name="Enter input data" owner="Res2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:23.558458" level="INFO">Typing text 'user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.556762" elapsed="0.187218"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:23.745759" level="INFO">Typing text '' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.744459" elapsed="0.143576"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-12-29T17:31:23.555224" elapsed="0.333081"/>
+</kw>
+<kw name="clicking_button" owner="Res2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:23.890784" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:23.889683" elapsed="0.119608"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:23.888667" elapsed="0.120875"/>
+</kw>
+<arg>username=user</arg>
+<arg>password=${empty}</arg>
+<status status="PASS" start="2024-12-29T17:31:23.552990" elapsed="0.456711"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:23.549757" elapsed="0.460250"/>
+</test>
+<test id="s1-s1-t3" name="Login with cvv using  and pass" line="13">
+<kw name="Login to the application">
+<kw name="Enter input data" owner="Res2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:24.018615" level="INFO">Typing text '' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.017797" elapsed="0.123706"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:24.142767" level="INFO">Typing text 'pass' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.141809" elapsed="0.129192"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-12-29T17:31:24.016647" elapsed="0.254561"/>
+</kw>
+<kw name="clicking_button" owner="Res2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:24.272978" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.272353" elapsed="0.109488"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:24.271482" elapsed="0.110595"/>
+</kw>
+<arg>username=${empty}</arg>
+<arg>password=pass</arg>
+<status status="PASS" start="2024-12-29T17:31:24.014869" elapsed="0.367350"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:24.012311" elapsed="0.370134"/>
+</test>
+<test id="s1-s1-t4" name="Login with cvv using user1 and secret_sauce" line="13">
+<kw name="Login to the application">
+<kw name="Enter input data" owner="Res2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:24.388301" level="INFO">Typing text 'user1' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.387529" elapsed="0.131123"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:24.519835" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.518957" elapsed="0.156397"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-12-29T17:31:24.386509" elapsed="0.289064"/>
+</kw>
+<kw name="clicking_button" owner="Res2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-29T17:31:24.677430" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.676887" elapsed="0.102248"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:24.675903" elapsed="0.103472"/>
+</kw>
+<arg>username=user1</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2024-12-29T17:31:24.385347" elapsed="0.394153"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:24.383436" elapsed="0.396271"/>
+</test>
+<kw name="closing_browser" owner="Res2" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-29T17:31:24.781552" elapsed="2.424464"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:24.780706" elapsed="2.425673"/>
+</kw>
+<status status="PASS" start="2024-12-29T17:31:15.752017" elapsed="11.454525"/>
+</suite>
+<status status="PASS" start="2024-12-29T17:31:15.720990" elapsed="11.487522"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Data TC">Testcases.Data TC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
